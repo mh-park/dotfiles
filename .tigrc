@@ -1,0 +1,2 @@
+bind main <Ctrl-R> !git rebase --autosquash -i %(commit)
+bind main <Ctrl-p> ?git push "%(prompt Enter remote name: )" %(commit):"%(prompt Enter branch name: )"

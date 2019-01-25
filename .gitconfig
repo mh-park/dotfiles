@@ -1,0 +1,27 @@
+[user]
+	name = Minho Park
+	email = minho.park@uber.com
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[alias]
+    b = branch
+    co = checkout
+    c = commit
+    wip = commit -am "wip"
+    s = status
+    ri = rebase -i
+    r = rebase
+[url "ssh://gitolite@code.uber.internal/"]
+	insteadOf = git://code.uber.internal/
+[url "ssh://code.uber.internal/"]
+	insteadOf = https://code.uber.internal/
+[url "ssh://config.uber.internal/"]
+	insteadOf = https://config.uber.internal/
+[http "https://gopkg.uberinternal.com"]
+	followRedirects = true
+[http "https://gopkg.in"]
+	followRedirects = true
+[farc "update"]
+	url = gitolite@code.uber.internal:community/farc
