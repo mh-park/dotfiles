@@ -1,0 +1,38 @@
+[user]
+	name = Minho Park
+	email = minho.park@uber.com
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[alias]
+    b = branch
+    co = checkout
+    c = commit
+    wip = commit -am "wip"
+    s = status -uno
+    ri = rebase -i
+    r = rebase
+    ca = commit --amend
+    review = commit -am "Code review"
+[url "ssh://gitolite@code.uber.internal/"]
+	insteadOf = git://code.uber.internal/
+[url "ssh://code.uber.internal/"]
+	insteadOf = https://code.uber.internal/
+[url "ssh://config.uber.internal/"]
+	insteadOf = https://config.uber.internal/
+[http "https://gopkg.uberinternal.com"]
+	followRedirects = true
+[http "https://gopkg.in"]
+	followRedirects = true
+[farc "update"]
+	url = gitolite@code.uber.internal:community/farc
+[credential "https://git.uberinternal.com"]
+	helper = usso
+[credential "https://vfs4g-cache.uberinternal.com"]
+	helper = usso
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

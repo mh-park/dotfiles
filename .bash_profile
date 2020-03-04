@@ -13,10 +13,13 @@ export FZF_ALT_C_COMMAND='
    find -L . \( -path "*/\.*" -o -fstype dev -o -fstype proc \) -prune -o -type d -print |
       sed 1d | cut -b3-) 2> /dev/null'
 
-export GOPATH=$GOPATH:$HOME/go-code
-export PATH=$PATH:$GOPATH/bin
+export GOPATH=$GOPATH
+export PATH=$PATH
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-source ~/go-code/tooling/buck-completion/buck-completion.bash
+source /usr/local/etc/bash_completion.d/bazel-complete.bash
 source ~/.fzf.bash
 [ -r /Users/minho.park/.profile_lda ] && . /Users/minho.park/.profile_lda
+
+source ~/.profile
+[ -f ~/.bashrc ] && source ~/.bashrc
