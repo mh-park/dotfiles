@@ -23,7 +23,6 @@
 !.profile.d/
 !.zprofile
 !.zsh/
-!.zshenv
 !.zshrc
 /.zsh/rc.d/local
 
