@@ -17,7 +17,7 @@ export GOPATH=$GOPATH
 export PATH=$PATH
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-source /usr/local/etc/bash_completion.d/bazel-complete.bash
+# source /usr/local/etc/bash_completion.d/bazel-complete.bash
 source ~/.fzf.bash
 [ -r /Users/minho.park/.profile_lda ] && . /Users/minho.park/.profile_lda
 
