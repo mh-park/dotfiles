@@ -8,5 +8,5 @@ source ~/.zsh/rc.d/history
 source ~/.zsh/rc.d/fzf
 
 PATH="/Users/minho.park/bin:/Users/minho.park/gocode/bin:/Users/minho.park/go/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-GOPATH="~/gocode"
+export GOPATH="$HOME/go"
 export PATH="/usr/local/opt/binutils/bin:$PATH"
