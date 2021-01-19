@@ -61,7 +61,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'fatih/molokai'
-" Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -72,6 +72,7 @@ call plug#end()
 
 
 let g:go_fmt_command = "goimports"
+let g:go_rename_command = "gopls"
 let g:rehash256 = 1
 let g:molokai_original = 1
 colorscheme molokai

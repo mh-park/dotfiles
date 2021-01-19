@@ -10,3 +10,5 @@ source ~/.zsh/rc.d/fzf
 PATH="/Users/minho.park/bin:/Users/minho.park/gocode/bin:/Users/minho.park/go/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export GOPATH="$HOME/go"
 export PATH="/usr/local/opt/binutils/bin:$PATH"
+
+export PS1="%B%~ $%b "
